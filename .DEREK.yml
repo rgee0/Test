@@ -1,0 +1,28 @@
+  operations:
+  #operations:addlabel, removelabel, open, close, assign, unassign
+    contributor:
+     - addlabel
+
+    curator:
+     - addlabel
+     - removelabel
+
+    maintainer:
+     - openissue
+     - closeissue
+     - assign
+     - unassign
+   
+  roles: 
+ 
+    maintainer:
+      - rgee0
+      - alexellis
+
+    curator:
+      - johnmccabe
+      - jockdarock
+
+    contributor:
+      - ericstoekl
+      - austinfrey
