@@ -8,8 +8,8 @@
      - removelabel
 
     maintainer:
-     - openissue
-     - closeissue
+     - open
+     - close
      - assign
      - unassign
    
