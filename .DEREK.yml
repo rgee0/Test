@@ -1,28 +1,6 @@
-  operations:
-  #operations:addlabel, removelabel, open, close, assign, unassign
-    contributor:
-     - addlabel
-
-    curator:
-     - addlabel
-     - removelabel
-
-    maintainer:
-     - open
-     - close
-     - assign
-     - unassign
-   
-  roles: 
- 
-    maintainer:
-      - rgee0
-      - alexellis
-
-    curator:
-      - johnmccabe
-      - jockdarock
-
-    contributor:
-      - ericstoekl
-      - austinfrey
+maintainers:
+ - alexellis
+ - rgee0
+features:
+ - dco_check
+ - comments
