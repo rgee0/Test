@@ -1,5 +1,5 @@
 maintainers:
  - alexellis
- - rgee0
 features:
  - dco_check
+ - comments
