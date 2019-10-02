@@ -5,3 +5,4 @@ curators:
 features:
  - dco_check
  - comments
+ - hacktoberfest
