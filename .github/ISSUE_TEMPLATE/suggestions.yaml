@@ -1,0 +1,74 @@
+name: Feature Request
+description: Let us know about ideas for new features, or inprovements to existing features
+labels: ["suggestion"]
+body:
+  - type: checkboxes
+    id: pre-checks
+    attributes:
+      label: My actions before raising this issue
+      description: Get help fast by ensuring your issue isn't covered elsewhere
+      options:
+        - label: Followed the [troubleshooting guide](https://docs.openfaas.com/deployment/troubleshooting/)
+          required: true
+        - label: Read/searched [the docs](https://docs.openfaas.com/)
+          required: true
+        - label: Searched [past issues](/issues)
+          required: true
+  - type: dropdown
+    id: sponsors
+    attributes:
+      label: Are you a GitHub Sponsor (Yes/No?)
+      description: Issues created by customers or monthly sponsors are prioritised 
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: dropdown
+    id: sponsor-nag
+    attributes:
+      label: If you're not a sponsor, would you consider becoming one?
+      description: If we're helping you solve a problem then why not return the favour?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What are you trying to do?
+      description: Why do you need this? How is this affecting you? What task are you trying to accomplish?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: How would this feature behave?
+    validations:
+      required: true
+  - type: textarea
+    id: proposals
+    attributes:
+      label: Implementation Ideas
+      description: What ideas do you propose as ways to implement this feature? 
+    validations:
+      required: true
+  - type: textarea
+    id: recommend
+    attributes:
+      label: Which Solution Do You Recommend?
+      description: Of the suggested implementation ideas, which would you try first? 
+    validations:
+      required: true
+  - type: dropdown
+    id: self-fix
+    attributes:
+      label: If the proposal is approved are you willing to work on the implementation?
+      description: Be part of the solution by commiting your skills & time to implementing the feature
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
