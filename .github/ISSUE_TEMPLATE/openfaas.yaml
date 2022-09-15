@@ -1,0 +1,94 @@
+name: Raise an issue
+description: Typically these would be used to track any bugs and progress of our own work 
+labels: ["triage"]
+body:
+  - type: checkboxes
+    id: pre-checks
+    attributes:
+      label: My actions before raising this issue
+      description: Get help fast by ensuring your issue isn't covered elsewhere
+      options:
+        - label: Followed the [troubleshooting guide](https://docs.openfaas.com/deployment/troubleshooting/)
+          required: true
+        - label: Read/searched [the docs](https://docs.openfaas.com/)
+          required: true
+        - label: Searched [past issues](/issues)
+          required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you need this?
+      description: How is this affecting you? What task are you trying to accomplish?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: If you're describing a bug, tell us what should be happening.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Behaviour
+      description: If describing a bug, tell us what is happening instead of the expected behavior.
+    validations:
+      required: true
+  - type: dropdown
+    id: sponsors
+    attributes:
+      label: Are you a GitHub Sponsor (Yes/No?)
+      description: Issues created by customers or monthly sponsors are prioritised 
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: List All Possible Solutions and Workarounds
+      description: Suggest a fix/reason for the bug, or implementation ideas, or workarounds which could avoid making changes.
+    validations:
+      required: true
+  - type: textarea
+    id: recommend
+    attributes:
+      label: Which Solution Do You Recommend?
+      description: Of the suggested solutions which would you try first? 
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: What are the steps to reproduce?
+      description: Provide a link to a live example, or an unambiguous set of steps to reproduce this bug. Include code to reproduce, if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Context
+      description: Any additional context such as how this is affecting you or could affect other users.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: Include as many relevant details about the environment in which you are working
+      value: |
+          - FaaS-CLI version ( Full output from: `faas-cli version` ):
+          
+          - Docker version `docker version` (e.g. Docker 17.0.05 ):
+          
+          - Are you using OpenFaaS on Kubernetes or [faasd](https://github.com/openfaas/faasd)?:
+          
+          - Operating System and version (e.g. Linux, Windows, MacOS):
+          
+          - Code example or link to GitHub repo or gist to reproduce problem:
+          
+          - Other diagnostic information / logs from [troubleshooting guide](https://docs.openfaas.com/deployment/troubleshooting)
+      render: markdown
+    validations:
+      required: true
