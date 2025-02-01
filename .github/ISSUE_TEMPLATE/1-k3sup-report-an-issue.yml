@@ -8,7 +8,7 @@ body:
       label: My actions before raising this issue
       description: Get help fast by ensuring your issue isn't covered elsewhere
       options:
-        - label: Searched [current & past issues](.?q=is%3Aissue%20))
+        - label: Searched [current & past issues](.?q=is%3Aissue%20)
           required: true
   - type: dropdown
     id: sponsors
